@@ -14,18 +14,16 @@ function getCount(str) {
     switch (stringSplit[i]) {
       case 'a':
         count += 1;
-
         break;
       case 'e':
         count += 1;
-
         break;
       case 'i':
-        count += 1;
-
+        ++count;
+        break;
       case 'o':
         count += 1;
-
+        break;
       case 'u':
         count += 1;
         break;
@@ -33,4 +31,7 @@ function getCount(str) {
   }
   return count;
 }
+
+getCount('o a kak ushakov lil vo kashu kakao');
+
 getCount('abracadabra');
