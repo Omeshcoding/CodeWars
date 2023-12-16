@@ -17,3 +17,25 @@ function mergeArrays(arr1, arr2) {
   return mergedArray.sort((a, b) => a - b);
 }
 mergeArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]);
+
+// Anotherway
+
+function mergeArrays(arr1, arr2) {
+  const newArr = [];
+  arr1
+    .concat(arr2)
+    .sort((a, b) => a - b)
+    .forEach((ele) => {
+      if (!newArr.includes(ele)) {
+        return newArr.push(ele);
+      }
+    });
+  return newArr;
+}
+mergeArrays([1, 2, 3, 4], [5, 6, 7, 8]);
+mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]);
+mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]);
+mergeArrays(
+  [5, 6, 12, 23, 25, 56, 56, 124, 213, 325, 325, 601],
+  [-100, -34, -27, -27, -8, 124, 213, 325, 325, 601]
+);
