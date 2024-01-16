@@ -52,3 +52,5 @@ var mergeAlternately = function (word1, word2) {
   }
   return result;
 };
+
+// Time Complexity for the above problem will be linear, as the number of operations grows linearly with the length of the shorter string.
