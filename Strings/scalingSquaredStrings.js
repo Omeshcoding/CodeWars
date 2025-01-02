@@ -1,3 +1,5 @@
+// link to Kata => https://www.codewars.com/kata/56ed20a2c4e5d69155000301/solutions/javascript
+
 // a "strng" string with length n , k is the parameter for horizontal scaling and
 //      n is the parameter for vertical scaling
 //when "strng" of length n is given if horizontally scaled by 2 then each character
