@@ -18,3 +18,18 @@ function solution(number) {
   return total;
 }
 solution(10);
+
+// new solution
+function solution(number) {
+  let numArr = [];
+  let sum = 0;
+  for (let i = number - 1; i > 0; i--) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      numArr.push(i);
+    }
+  }
+  numArr.map((item) => (sum += item)).toString();
+  return sum;
+}
+
+solution(9);
